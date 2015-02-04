@@ -145,13 +145,15 @@ uint8 SHT10_Measurement(uint8* pReceiveBuf,uint8 mode)
 
 	//if(error) HalUartPrint("Error!");
 	while(P0 & SDA);
+        
 	
 	#ifdef UARTDEBUG
 	HalUartPrint("Measurement Done");
 	#endif
 	
 	*(pReceiveBuf) = SHT10_ReadByte(ACK);
-	*(pReceiveBuf+1) = SHT10_ReadByte(noACK);
+	*(pReceiveBuf+1) = SHT10_ReadByte(ACK);
+        *(pReceiveBuf+2) = SHT10_ReadByte(noACK);
 
 	return error;
 }

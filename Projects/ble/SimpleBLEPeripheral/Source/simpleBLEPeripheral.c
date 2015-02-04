@@ -210,11 +210,14 @@ static uint8 advertData[] =
   GAP_ADTYPE_16BIT_MORE,      // some of the UUID's, but not all
   LO_UINT16( SIMPLEPROFILE_SERV_UUID ),
   HI_UINT16( SIMPLEPROFILE_SERV_UUID ),
-  0x03,
+  0x07,
   GAP_ADTYPE_SERVICE_DATA,
   0x01,
   0x02,
-
+  0x03,
+  0x04,
+  0x05,
+  0x06
 };
 
 // GAP GATT Attributes
@@ -491,10 +494,10 @@ uint16 SimpleBLEPeripheral_ProcessEvent( uint8 task_id, uint16 events )
   if ( events & SBP_PERIODIC_EVT )
   {
     // Restart timer
-    if ( SBP_PERIODIC_EVT_PERIOD )
-    {
-      osal_start_timerEx( simpleBLEPeripheral_TaskID, SBP_PERIODIC_EVT, SBP_PERIODIC_EVT_PERIOD );
-    }
+    //if ( SBP_PERIODIC_EVT_PERIOD )
+   // {
+      //osal_start_timerEx( simpleBLEPeripheral_TaskID, SBP_PERIODIC_EVT, SBP_PERIODIC_EVT_PERIOD );
+  //  }
 
     // Perform periodic application task
     performPeriodicTask();
@@ -504,15 +507,21 @@ uint16 SimpleBLEPeripheral_ProcessEvent( uint8 task_id, uint16 events )
   }
 
   if(events & SBP_SHT10_TEMP_EVT){
-  	uint8* temp = osal_mem_alloc(sizeof(uint8)*2);
+  	uint8* temp = osal_mem_alloc(sizeof(uint8)*3);
 	SHT10_Measurement(temp, MEASURE_TEMP);
 	advertData[9] = temp[0];
 	advertData[10] = temp[1];
+        advertData[11] = temp[2];
+        
+        SHT10_Measurement(temp, MEASURE_HUMI);
+        advertData[12] = temp[0];
+	advertData[13] = temp[1];
+        advertData[14] = temp[2];
 	GAPRole_SetParameter( GAPROLE_ADVERT_DATA, sizeof( advertData ), advertData );
 
 	//HalUartPrint(temp);
 	osal_mem_free(temp);
-	HalUartPrint("Hello!");
+	//HalUartPrint("Hello!");
 	osal_start_timerEx(simpleBLEPeripheral_TaskID, SBP_SHT10_TEMP_EVT, 3000);
 	return (events^SBP_SHT10_TEMP_EVT);
   }
