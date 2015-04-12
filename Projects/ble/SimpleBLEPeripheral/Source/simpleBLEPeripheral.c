@@ -93,7 +93,7 @@
 #define SBP_PERIODIC_EVT_PERIOD                   5000
 
 // What is the advertising interval when device is discoverable (units of 625us, 160=100ms)
-#define DEFAULT_ADVERTISING_INTERVAL          3200
+#define DEFAULT_ADVERTISING_INTERVAL          1200
 
 // Limited discoverable mode advertises for 30.72s, and then stops
 // General discoverable mode advertises indefinitely
@@ -129,6 +129,8 @@
 
 // Length of bd addr as a string
 #define B_ADDR_STR_LEN                        15
+
+#define TEMPHUMI_DATA_LOCATION                  9
 
 /*********************************************************************
  * TYPEDEFS
@@ -179,6 +181,8 @@ static uint8 scanRspData[] =
   0x61,   // 'a'
   0x6c,   // 'l'
 
+  
+  
   // connection interval range
   0x05,   // length of this data
   GAP_ADTYPE_SLAVE_CONN_INTERVAL_RANGE,
@@ -210,18 +214,25 @@ static uint8 advertData[] =
   GAP_ADTYPE_16BIT_MORE,      // some of the UUID's, but not all
   LO_UINT16( SIMPLEPROFILE_SERV_UUID ),
   HI_UINT16( SIMPLEPROFILE_SERV_UUID ),
-  0x07,
+  
+  0x09,
   GAP_ADTYPE_SERVICE_DATA,
   0x01,
   0x02,
   0x03,
   0x04,
   0x05,
-  0x06
+  0x06,
+  0x07,
+  0x08
+  
+  
 };
 
 // GAP GATT Attributes
 static uint8 attDeviceName[GAP_DEVICE_NAME_LEN] = "Simple BLE Peripheral";
+
+static uint8 AdvertCount = 0;
 
 /*********************************************************************
  * LOCAL FUNCTIONS
@@ -440,6 +451,11 @@ void SimpleBLEPeripheral_Init( uint8 task_id )
   osal_start_timerEx(simpleBLEPeripheral_TaskID, SBP_SHT10_TEMP_EVT, 1000);
   HalUartInit();
   SHT10_Init();
+  HalAdcInit();//ADC Init
+  HalAdcSetReference(HAL_ADC_REF_125V);//set as internral reference
+  uint16 VccVoltage = HalAdcRead(HAL_ADC_CHN_VDD3, HAL_ADC_RESOLUTION_14);//读取电源电压
+  advertData[TEMPHUMI_DATA_LOCATION+6] = (uint8)(VccVoltage>>8);
+  advertData[TEMPHUMI_DATA_LOCATION+7] = (uint8)(VccVoltage&0xFF);//加入到广播数据中
  /*************************/
 }
 
@@ -508,21 +524,34 @@ uint16 SimpleBLEPeripheral_ProcessEvent( uint8 task_id, uint16 events )
 
   if(events & SBP_SHT10_TEMP_EVT){
   	uint8* temp = osal_mem_alloc(sizeof(uint8)*3);
+        
+        
 	SHT10_Measurement(temp, MEASURE_TEMP);
-	advertData[9] = temp[0];
-	advertData[10] = temp[1];
-        advertData[11] = temp[2];
+	advertData[TEMPHUMI_DATA_LOCATION] = temp[0];
+	advertData[TEMPHUMI_DATA_LOCATION+1] = temp[1];
+        advertData[TEMPHUMI_DATA_LOCATION+2] = temp[2];
         
         SHT10_Measurement(temp, MEASURE_HUMI);
-        advertData[12] = temp[0];
-	advertData[13] = temp[1];
-        advertData[14] = temp[2];
-	GAPRole_SetParameter( GAPROLE_ADVERT_DATA, sizeof( advertData ), advertData );
+        advertData[TEMPHUMI_DATA_LOCATION+3] = temp[0];
+	advertData[TEMPHUMI_DATA_LOCATION+4] = temp[1];
+        advertData[TEMPHUMI_DATA_LOCATION+5] = temp[2];
+	
 
 	//HalUartPrint(temp);
 	osal_mem_free(temp);
-	//HalUartPrint("Hello!");
-	osal_start_timerEx(simpleBLEPeripheral_TaskID, SBP_SHT10_TEMP_EVT, 3000);
+	
+       // AdvertCount++;
+        if(AdvertCount++ == 60){ //每过一段时间重置一次
+          AdvertCount = 0;
+          SHT10_SoftReset();		//get VCC voltage every minutes
+	   uint16 VccVoltage = HalAdcRead(HAL_ADC_CHN_VDD3, HAL_ADC_RESOLUTION_14);//读取电源电压
+  	   advertData[TEMPHUMI_DATA_LOCATION+6] = (uint8)(VccVoltage>>8);
+  	   advertData[TEMPHUMI_DATA_LOCATION+7] = (uint8)(VccVoltage&0xFF);//加入到广播数据中
+        }
+
+	GAPRole_SetParameter( GAPROLE_ADVERT_DATA, sizeof( advertData ), advertData );
+        
+	osal_start_timerEx(simpleBLEPeripheral_TaskID, SBP_SHT10_TEMP_EVT, 1000);
 	return (events^SBP_SHT10_TEMP_EVT);
   }
 

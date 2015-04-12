@@ -10,6 +10,10 @@
 */
 void SHT10_Init(void)
 {
+        P0SEL &= ~(SHT_VCC);
+        P0DIR |= SHT_VCC;
+        P0 |= SHT_VCC;  //Ä£¿éÉÏµç
+        
 	P0SEL &= ~(SCK+SDA);//config as gen IO
 	P0DIR |= (SCK+SDA);//sck and sda is output
 
@@ -135,7 +139,9 @@ uint8 SHT10_ReadByte(uint8 ack)
 uint8 SHT10_Measurement(uint8* pReceiveBuf,uint8 mode)
 {
 	uint8 error = 0;  //code that cheakout whether the WriteCommand has ACK
-
+        uint16 delay1 = 65535;
+        uint16 delay2 = 65535;
+        
 	SHT10_TranStart();
 	switch(mode)
 	{
@@ -144,7 +150,16 @@ uint8 SHT10_Measurement(uint8* pReceiveBuf,uint8 mode)
 	}
 
 	//if(error) HalUartPrint("Error!");
-	while(P0 & SDA);
+	//while(P0 & SDA);
+        
+        while(delay1--)
+        {
+          while(delay2--)
+          {
+            NOP();
+            if(!(P0 & SDA)) break;
+          }
+        }
         
 	
 	#ifdef UARTDEBUG

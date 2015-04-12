@@ -22,6 +22,7 @@
 #define TEMPERATURE   1
 #define SCK           BIT0	//P0.0 = SCK
 #define SDA           BIT2	//P0.2 = SDA
+#define SHT_VCC       BIT4      //P0.4 = Vcc
 
 
 #define SCK_H         P0 |= SCK

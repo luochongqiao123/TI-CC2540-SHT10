@@ -1,74 +1,74 @@
-"E:\onedrie\Code\BLE-CC254x-1.4.0 - final\Projects\ble\common\cc2540\OnBoard.c"
+"E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\common\cc2540\OnBoard.c"
 -std=c99
 -ferror-limit=100
 -I
-E:\onedrie\Code\BLE-CC254x-1.4.0 - final\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\common
+E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\common
 -I
-E:\onedrie\Code\BLE-CC254x-1.4.0 - final\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\include
+E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\include
 -I
-E:\onedrie\Code\BLE-CC254x-1.4.0 - final\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\..\..\Components\hal\include
+E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\..\..\Components\hal\include
 -I
-E:\onedrie\Code\BLE-CC254x-1.4.0 - final\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\..\..\Components\hal\target\CC2540EB
+E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\..\..\Components\hal\target\CC2540EB
 -I
-E:\onedrie\Code\BLE-CC254x-1.4.0 - final\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\..\..\Components\osal\include
+E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\..\..\Components\osal\include
 -I
-E:\onedrie\Code\BLE-CC254x-1.4.0 - final\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\..\..\Components\services\saddr
+E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\..\..\Components\services\saddr
 -I
-E:\onedrie\Code\BLE-CC254x-1.4.0 - final\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\..\..\Components\ble\include
+E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\..\..\Components\ble\include
 -I
-E:\onedrie\Code\BLE-CC254x-1.4.0 - final\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\..\..\Components\ble\controller\phy
+E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\..\..\Components\ble\controller\phy
 -I
-E:\onedrie\Code\BLE-CC254x-1.4.0 - final\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\..\..\Components\ble\controller\include
+E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\..\..\Components\ble\controller\include
 -I
-E:\onedrie\Code\BLE-CC254x-1.4.0 - final\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\..\..\Components\ble\hci
+E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\..\..\Components\ble\hci
 -I
-E:\onedrie\Code\BLE-CC254x-1.4.0 - final\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\..\..\Components\ble\host
+E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\..\..\Components\ble\host
 -I
-E:\onedrie\Code\BLE-CC254x-1.4.0 - final\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\common\cc2540
+E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\common\cc2540
 -I
-E:\onedrie\Code\BLE-CC254x-1.4.0 - final\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\common\npi\npi_np
+E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\common\npi\npi_np
 -I
-E:\onedrie\Code\BLE-CC254x-1.4.0 - final\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\Profiles\Roles
+E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\Profiles\Roles
 -I
-E:\onedrie\Code\BLE-CC254x-1.4.0 - final\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\Profiles\SimpleProfile
+E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\Profiles\SimpleProfile
 -I
-E:\onedrie\Code\BLE-CC254x-1.4.0 - final\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\Profiles\DevInfo
+E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\..\..\Profiles\DevInfo
 -I
 F:\BLE\IAR\8051\inc
 -I
 F:\BLE\IAR\8051\inc\clib
 -I
-E:\onedrie\Code\BLE-CC254x-1.4.0 - final\Projects\ble\common
+E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\common
 -I
-E:\onedrie\Code\BLE-CC254x-1.4.0 - final\Projects\ble\include
+E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\include
 -I
-E:\onedrie\Code\BLE-CC254x-1.4.0 - final\Components\hal\include
+E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Components\hal\include
 -I
-E:\onedrie\Code\BLE-CC254x-1.4.0 - final\Components\hal\target\CC2540EB
+E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Components\hal\target\CC2540EB
 -I
-E:\onedrie\Code\BLE-CC254x-1.4.0 - final\Components\osal\include
+E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Components\osal\include
 -I
-E:\onedrie\Code\BLE-CC254x-1.4.0 - final\Components\services\saddr
+E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Components\services\saddr
 -I
-E:\onedrie\Code\BLE-CC254x-1.4.0 - final\Components\ble\include
+E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Components\ble\include
 -I
-E:\onedrie\Code\BLE-CC254x-1.4.0 - final\Components\ble\controller\phy
+E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Components\ble\controller\phy
 -I
-E:\onedrie\Code\BLE-CC254x-1.4.0 - final\Components\ble\controller\include
+E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Components\ble\controller\include
 -I
-E:\onedrie\Code\BLE-CC254x-1.4.0 - final\Components\ble\hci
+E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Components\ble\hci
 -I
-E:\onedrie\Code\BLE-CC254x-1.4.0 - final\Components\ble\host
+E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Components\ble\host
 -I
-E:\onedrie\Code\BLE-CC254x-1.4.0 - final\Projects\ble\common\cc2540
+E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\common\cc2540
 -I
-E:\onedrie\Code\BLE-CC254x-1.4.0 - final\Projects\ble\common\npi\npi_np
+E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\common\npi\npi_np
 -I
-E:\onedrie\Code\BLE-CC254x-1.4.0 - final\Projects\ble\Profiles\Roles
+E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\Profiles\Roles
 -I
-E:\onedrie\Code\BLE-CC254x-1.4.0 - final\Projects\ble\Profiles\SimpleProfile
+E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\Profiles\SimpleProfile
 -I
-E:\onedrie\Code\BLE-CC254x-1.4.0 - final\Projects\ble\Profiles\DevInfo
+E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\Profiles\DevInfo
 -DINT_HEAP_LEN=3072
 -DHALNODEBUG=0
 -DOSAL_CBTIMER_NUM_TASKS=1
@@ -79,6 +79,7 @@ E:\onedrie\Code\BLE-CC254x-1.4.0 - final\Projects\ble\Profiles\DevInfo
 -DHAL_LCD=TRUE
 -DHAL_LED=FALSE
 -DHAL_UART=TRUE
+-DHAL_ADC=TRUE
 -D__CHAR_BITS__=8
 -D__CHAR_MAX__=0xff
 -D__CHAR_MIN__=0
@@ -373,8 +374,8 @@ E:\onedrie\Code\BLE-CC254x-1.4.0 - final\Projects\ble\Profiles\DevInfo
 -D__PLAIN_INT_BITFIELD_IS_SIGNED__=1
 -D__HAS_LOCATED_DECLARATION__=1
 -D__IAR_COMPILERBASE__=593409
--D__DATE__="Jan 18 2015"
--D__TIME__="14:18:57"
+-D__DATE__="Feb 12 2015"
+-D__TIME__="22:09:44"
 -D__STDC__=1
 -D__STDC_VERSION__=199901L
 -D__STDC_HOSTED__=1
@@ -427,6 +428,7 @@ E:\onedrie\Code\BLE-CC254x-1.4.0 - final\Projects\ble\Profiles\DevInfo
 -DHAL_LCD=TRUE
 -DHAL_LED=FALSE
 -DHAL_UART=TRUE
+-DHAL_ADC=TRUE
 -D__VERSION__="IAR C/C++ Compiler V8.30.1.41636 for 8051"
 -D__CODE_MEMORY_LIST1__()=__CODE_MEM_HELPER1__(__code, 0 )
 -D__CODE_MEMORY_LIST2__(_P1)=__CODE_MEM_HELPER2__(__code, 0 ,  _P1 )

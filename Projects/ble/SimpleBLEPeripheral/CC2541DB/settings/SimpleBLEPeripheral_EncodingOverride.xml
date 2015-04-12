@@ -6,6 +6,10 @@
     <encoding>System</encoding>
   </override>
   <override>
+    <path>E:\onedrie\&#x6587;&#x6863;\GitHub\TI-CC2540-SHT10\Components\hal\target\CC2540EB\hal_adc.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
     <path>E:\onedrie\&#x6587;&#x6863;\GitHub\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\Source\sht10.h</path>
     <encoding>System</encoding>
   </override>
