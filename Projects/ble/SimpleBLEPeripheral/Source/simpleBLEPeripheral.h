@@ -58,6 +58,8 @@ extern "C"
 #define SBP_START_DEVICE_EVT                              0x0001
 #define SBP_PERIODIC_EVT                                  0x0002
 #define SBP_SHT10_TEMP_EVT					0x0004
+#define SBP_SHT10_START_GET_TEMP                                0x0008
+#define SBP_SHT10_TRY_GET_TEMP                                  0x0010
 
 /*********************************************************************
  * MACROS

@@ -93,7 +93,7 @@
 #define SBP_PERIODIC_EVT_PERIOD                   5000
 
 // What is the advertising interval when device is discoverable (units of 625us, 160=100ms)
-#define DEFAULT_ADVERTISING_INTERVAL          1200
+#define DEFAULT_ADVERTISING_INTERVAL          1600
 
 // Limited discoverable mode advertises for 30.72s, and then stops
 // General discoverable mode advertises indefinitely
@@ -541,7 +541,7 @@ uint16 SimpleBLEPeripheral_ProcessEvent( uint8 task_id, uint16 events )
 	osal_mem_free(temp);
 	
        // AdvertCount++;
-        if(AdvertCount++ == 60){ //每过一段时间重置一次
+        if(AdvertCount++ == 10){ //每过一段时间重置一次
           AdvertCount = 0;
           SHT10_SoftReset();		//get VCC voltage every minutes
 	   uint16 VccVoltage = HalAdcRead(HAL_ADC_CHN_VDD3, HAL_ADC_RESOLUTION_14);//读取电源电压
@@ -554,6 +554,13 @@ uint16 SimpleBLEPeripheral_ProcessEvent( uint8 task_id, uint16 events )
 	osal_start_timerEx(simpleBLEPeripheral_TaskID, SBP_SHT10_TEMP_EVT, 1000);
 	return (events^SBP_SHT10_TEMP_EVT);
   }
+  
+  //开始I2C通信
+//  if(events & SBP_SHT10_START_GET_TEMP)
+//  {
+//    
+//  }
+  
 
   // Discard unknown events
   return 0;

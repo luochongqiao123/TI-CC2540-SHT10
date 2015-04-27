@@ -2,143 +2,112 @@
 #                                                                              #
 #      IAR Universal Linker V5.7.0.39                                          #
 #                                                                              #
-#           Link time     =  12/Apr/2015  14:11:55                             #
+#           Link time     =  27/Apr/2015  10:55:13                             #
 #           Target CPU    =  x51                                               #
-#           List file     =  E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\b #
-#                            le\SimpleBLEPeripheral\CC2541DB\CC2541\List\Simpl #
-#                            eBLEPeripheral.map                                #
-#           Output file 1 =  E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\b #
-#                            le\SimpleBLEPeripheral\CC2541DB\CC2541\Exe\Simple #
-#                            BLEPeripheral.hex                                 #
+#           List file     =  F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEP #
+#                            eripheral\CC2541DB\CC2541\List\SimpleBLEPeriphera #
+#                            l.map                                             #
+#           Output file 1 =  F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEP #
+#                            eripheral\CC2541DB\CC2541\Exe\SimpleBLEPeripheral #
+#                            .hex                                              #
 #                            Format: intel-extended                            #
-#           Output file 2 =  E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\b #
-#                            le\SimpleBLEPeripheral\CC2541DB\CC2541\Exe\Simple #
-#                            BLEPeripheral.d51                                 #
+#           Output file 2 =  F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEP #
+#                            eripheral\CC2541DB\CC2541\Exe\SimpleBLEPeripheral #
+#                            .d51                                              #
 #                            Format: debug                                     #
 #                            UBROF version 10.0.6                              #
 #                            Using library modules for C-SPY (-rt)             #
-#           Command line  =  -IF:\BLE\IAR\8051\CONFIG\ -D_NR_OF_BANKS=0x07     #
+#           Command line  =  -IE:\IAR\8051\CONFIG\ -D_NR_OF_BANKS=0x07         #
 #                            -D_CODEBANK_END=0xFFFF -D_CODEBANK_START=0x8000   #
 #                            -D?CBANK_MASK=0xFF -D?CBANK=0x9F                  #
-#                            E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\b #
-#                            le\Libraries\CC2541DB\bin\CC2541_BLE_peri.lib     #
-#                            E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\b #
-#                            le\Libraries\Common\bin\CC254x_BLE_HCI_TL_None.li #
-#                            b                                                 #
-#                            E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\b #
-#                            le\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\OSAL.r #
+#                            F:\实习生\TI-CC2540-SHT10\Projects\ble\Libraries\ #
+#                            CC2541DB\bin\CC2541_BLE_peri.lib                  #
+#                            F:\实习生\TI-CC2540-SHT10\Projects\ble\Libraries\ #
+#                            Common\bin\CC254x_BLE_HCI_TL_None.lib             #
+#                            F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEP #
+#                            eripheral\CC2541DB\CC2541\Obj\OSAL.r51            #
+#                            F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEP #
+#                            eripheral\CC2541DB\CC2541\Obj\OSAL_ClockBLE.r51   #
+#                            F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEP #
+#                            eripheral\CC2541DB\CC2541\Obj\OSAL_Memory.r51     #
+#                            F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEP #
+#                            eripheral\CC2541DB\CC2541\Obj\OSAL_PwrMgr.r51     #
+#                            F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEP #
+#                            eripheral\CC2541DB\CC2541\Obj\OSAL_SimpleBLEPerip #
+#                            heral.r51                                         #
+#                            F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEP #
+#                            eripheral\CC2541DB\CC2541\Obj\OSAL_Timers.r51     #
+#                            F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEP #
+#                            eripheral\CC2541DB\CC2541\Obj\OnBoard.r51         #
+#                            F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEP #
+#                            eripheral\CC2541DB\CC2541\Obj\SimpleBLEPeripheral #
+#                            _Main.r51                                         #
+#                            F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEP #
+#                            eripheral\CC2541DB\CC2541\Obj\UartDebug.r51       #
+#                            F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEP #
+#                            eripheral\CC2541DB\CC2541\Obj\devinfoservice.r51  #
+#                            F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEP #
+#                            eripheral\CC2541DB\CC2541\Obj\gap.r51             #
+#                            F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEP #
+#                            eripheral\CC2541DB\CC2541\Obj\gapbondmgr.r51      #
+#                            F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEP #
+#                            eripheral\CC2541DB\CC2541\Obj\gatt_uuid.r51       #
+#                            F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEP #
+#                            eripheral\CC2541DB\CC2541\Obj\hal_adc.r51         #
+#                            F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEP #
+#                            eripheral\CC2541DB\CC2541\Obj\hal_aes.r51         #
+#                            F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEP #
+#                            eripheral\CC2541DB\CC2541\Obj\hal_crc.r51         #
+#                            F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEP #
+#                            eripheral\CC2541DB\CC2541\Obj\hal_dma.r51         #
+#                            F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEP #
+#                            eripheral\CC2541DB\CC2541\Obj\hal_drivers.r51     #
+#                            F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEP #
+#                            eripheral\CC2541DB\CC2541\Obj\hal_flash.r51       #
+#                            F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEP #
+#                            eripheral\CC2541DB\CC2541\Obj\hal_key.r51         #
+#                            F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEP #
+#                            eripheral\CC2541DB\CC2541\Obj\hal_lcd.r51         #
+#                            F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEP #
+#                            eripheral\CC2541DB\CC2541\Obj\hal_led.r51         #
+#                            F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEP #
+#                            eripheral\CC2541DB\CC2541\Obj\hal_sleep.r51       #
+#                            F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEP #
+#                            eripheral\CC2541DB\CC2541\Obj\hal_startup.r51     #
+#                            F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEP #
+#                            eripheral\CC2541DB\CC2541\Obj\hal_timer.r51       #
+#                            F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEP #
+#                            eripheral\CC2541DB\CC2541\Obj\hal_uart.r51        #
+#                            F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEP #
+#                            eripheral\CC2541DB\CC2541\Obj\npi.r51             #
+#                            F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEP #
+#                            eripheral\CC2541DB\CC2541\Obj\osal_bufmgr.r51     #
+#                            F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEP #
+#                            eripheral\CC2541DB\CC2541\Obj\osal_cbtimer.r51    #
+#                            F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEP #
+#                            eripheral\CC2541DB\CC2541\Obj\osal_snv.r51        #
+#                            F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEP #
+#                            eripheral\CC2541DB\CC2541\Obj\peripheral.r51      #
+#                            F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEP #
+#                            eripheral\CC2541DB\CC2541\Obj\sht10.r51           #
+#                            F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEP #
+#                            eripheral\CC2541DB\CC2541\Obj\simpleBLEPeripheral #
+#                            .r51                                              #
+#                            F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEP #
+#                            eripheral\CC2541DB\CC2541\Obj\simpleGATTprofile.r #
 #                            51                                                #
-#                            E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\b #
-#                            le\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\OSAL_C #
-#                            lockBLE.r51                                       #
-#                            E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\b #
-#                            le\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\OSAL_M #
-#                            emory.r51                                         #
-#                            E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\b #
-#                            le\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\OSAL_P #
-#                            wrMgr.r51                                         #
-#                            E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\b #
-#                            le\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\OSAL_S #
-#                            impleBLEPeripheral.r51                            #
-#                            E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\b #
-#                            le\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\OSAL_T #
-#                            imers.r51                                         #
-#                            E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\b #
-#                            le\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\OnBoar #
-#                            d.r51                                             #
-#                            E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\b #
-#                            le\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\Simple #
-#                            BLEPeripheral_Main.r51                            #
-#                            E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\b #
-#                            le\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\UartDe #
-#                            bug.r51                                           #
-#                            E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\b #
-#                            le\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\devinf #
-#                            oservice.r51                                      #
-#                            E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\b #
-#                            le\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\gap.r5 #
-#                            1                                                 #
-#                            E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\b #
-#                            le\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\gapbon #
-#                            dmgr.r51                                          #
-#                            E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\b #
-#                            le\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\gatt_u #
-#                            uid.r51                                           #
-#                            E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\b #
-#                            le\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\hal_ad #
-#                            c.r51                                             #
-#                            E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\b #
-#                            le\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\hal_ae #
-#                            s.r51                                             #
-#                            E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\b #
-#                            le\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\hal_cr #
-#                            c.r51                                             #
-#                            E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\b #
-#                            le\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\hal_dm #
-#                            a.r51                                             #
-#                            E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\b #
-#                            le\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\hal_dr #
-#                            ivers.r51                                         #
-#                            E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\b #
-#                            le\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\hal_fl #
-#                            ash.r51                                           #
-#                            E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\b #
-#                            le\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\hal_ke #
-#                            y.r51                                             #
-#                            E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\b #
-#                            le\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\hal_lc #
-#                            d.r51                                             #
-#                            E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\b #
-#                            le\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\hal_le #
-#                            d.r51                                             #
-#                            E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\b #
-#                            le\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\hal_sl #
-#                            eep.r51                                           #
-#                            E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\b #
-#                            le\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\hal_st #
-#                            artup.r51                                         #
-#                            E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\b #
-#                            le\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\hal_ti #
-#                            mer.r51                                           #
-#                            E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\b #
-#                            le\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\hal_ua #
-#                            rt.r51                                            #
-#                            E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\b #
-#                            le\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\npi.r5 #
-#                            1                                                 #
-#                            E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\b #
-#                            le\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\osal_b #
-#                            ufmgr.r51                                         #
-#                            E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\b #
-#                            le\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\osal_c #
-#                            btimer.r51                                        #
-#                            E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\b #
-#                            le\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\osal_s #
-#                            nv.r51                                            #
-#                            E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\b #
-#                            le\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\periph #
-#                            eral.r51                                          #
-#                            E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\b #
-#                            le\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\sht10. #
-#                            r51                                               #
-#                            E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\b #
-#                            le\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\simple #
-#                            BLEPeripheral.r51                                 #
-#                            E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\b #
-#                            le\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\simple #
-#                            GATTprofile.r51                                   #
 #                            -o                                                #
-#                            E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\b #
-#                            le\SimpleBLEPeripheral\CC2541DB\CC2541\Exe\Simple #
-#                            BLEPeripheral.d51                                 #
+#                            F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEP #
+#                            eripheral\CC2541DB\CC2541\Exe\SimpleBLEPeripheral #
+#                            .d51                                              #
 #                            -l                                                #
-#                            E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\b #
-#                            le\SimpleBLEPeripheral\CC2541DB\CC2541\List\Simpl #
-#                            eBLEPeripheral.map                                #
+#                            F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEP #
+#                            eripheral\CC2541DB\CC2541\List\SimpleBLEPeriphera #
+#                            l.map                                             #
 #                            -xmsn -f                                          #
-#                            E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\b #
-#                            le\SimpleBLEPeripheral\CC2541DB\..\..\common\cc25 #
-#                            40\ti_51ew_cc2540b.xcl                            #
+#                            F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEP #
+#                            eripheral\CC2541DB\..\..\common\cc2540\ti_51ew_cc #
+#                            2540b.xcl                                         #
 #                            (-D_IDATA_END=0xFF -D_PDATA_START=0x1E00          #
 #                            -D_PDATA_END=0x1EFF -D_IXDATA_START=0x0001        #
 #                            -D_IXDATA_END=0x1EFF                              #
@@ -256,11 +225,11 @@
 #                            -e?BDISPATCH_FF=?BDISPATCH                        #
 #                            -e_large_write=_formatted_write                   #
 #                            -e_large_read=_formatted_read -rt                 #
-#                            -Ointel-extended=E:\onedrie\文档\GitHub\TI-CC2540 #
-#                            -SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\ #
-#                            CC2541\Exe\SimpleBLEPeripheral.hex                #
+#                            -Ointel-extended=F:\实习生\TI-CC2540-SHT10\Projec #
+#                            ts\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Exe\Si #
+#                            mpleBLEPeripheral.hex                             #
 #                            -s __program_start                                #
-#                            F:\BLE\IAR\8051\LIB\CLIB\cl-pli-blxd-1e16x01.r51  #
+#                            E:\IAR\8051\LIB\CLIB\cl-pli-blxd-1e16x01.r51      #
 #                            -D_IDATA_STACK_SIZE=0xC0 -D?ESP=0 -D?ESP_MASK=0   #
 #                            -D_EXTENDED_STACK_START=0                         #
 #                            -D_EXTENDED_STACK_SIZE=0                          #
@@ -405,7 +374,7 @@ Absolute parts
            _NR_OF_BANKS            00000007 
     *************************************************************************
 
-  FILE NAME : E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\Libraries\CC2541DB\bin\CC2541_BLE_peri.lib
+  FILE NAME : F:\实习生\TI-CC2540-SHT10\Projects\ble\Libraries\CC2541DB\bin\CC2541_BLE_peri.lib
   LIBRARY MODULE, NAME : att_server
 
   SEGMENTS IN THE MODULE
@@ -14450,7 +14419,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\Libraries\Common\bin\CC254x_BLE_HCI_TL_None.lib
+  FILE NAME : F:\实习生\TI-CC2540-SHT10\Projects\ble\Libraries\Common\bin\CC254x_BLE_HCI_TL_None.lib
   LIBRARY MODULE, NAME : hci_tl
 
   SEGMENTS IN THE MODULE
@@ -14608,7 +14577,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\OSAL.r51
+  FILE NAME : F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\OSAL.r51
   PROGRAM MODULE, NAME : OSAL
 
   SEGMENTS IN THE MODULE
@@ -15506,7 +15475,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\OSAL_ClockBLE.r51
+  FILE NAME : F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\OSAL_ClockBLE.r51
   PROGRAM MODULE, NAME : OSAL_ClockBLE
 
   SEGMENTS IN THE MODULE
@@ -15567,7 +15536,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\OSAL_Memory.r51
+  FILE NAME : F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\OSAL_Memory.r51
   PROGRAM MODULE, NAME : OSAL_Memory
 
   SEGMENTS IN THE MODULE
@@ -15710,7 +15679,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\OSAL_PwrMgr.r51
+  FILE NAME : F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\OSAL_PwrMgr.r51
   PROGRAM MODULE, NAME : OSAL_PwrMgr
 
   SEGMENTS IN THE MODULE
@@ -15785,7 +15754,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\OSAL_SimpleBLEPeripheral.r51
+  FILE NAME : F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\OSAL_SimpleBLEPeripheral.r51
   PROGRAM MODULE, NAME : OSAL_SimpleBLEPeripheral
 
   SEGMENTS IN THE MODULE
@@ -15843,7 +15812,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\OSAL_Timers.r51
+  FILE NAME : F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\OSAL_Timers.r51
   PROGRAM MODULE, NAME : OSAL_Timers
 
   SEGMENTS IN THE MODULE
@@ -16079,7 +16048,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\OnBoard.r51
+  FILE NAME : F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\OnBoard.r51
   PROGRAM MODULE, NAME : OnBoard
 
   SEGMENTS IN THE MODULE
@@ -16212,7 +16181,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\SimpleBLEPeripheral_Main.r51
+  FILE NAME : F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\SimpleBLEPeripheral_Main.r51
   PROGRAM MODULE, NAME : SimpleBLEPeripheral_Main
 
   SEGMENTS IN THE MODULE
@@ -16242,7 +16211,7 @@ SFR_AN
 
     *************************************************************************
 
-  FILE NAME : E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\UartDebug.r51
+  FILE NAME : F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\UartDebug.r51
   PROGRAM MODULE, NAME : UartDebug
 
   SEGMENTS IN THE MODULE
@@ -16266,7 +16235,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\devinfoservice.r51
+  FILE NAME : F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\devinfoservice.r51
   PROGRAM MODULE, NAME : devinfoservice
 
   SEGMENTS IN THE MODULE
@@ -16724,7 +16693,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\gap.r51
+  FILE NAME : F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\gap.r51
   PROGRAM MODULE, NAME : gap
 
   SEGMENTS IN THE MODULE
@@ -16748,7 +16717,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\gapbondmgr.r51
+  FILE NAME : F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\gapbondmgr.r51
   PROGRAM MODULE, NAME : gapbondmgr
 
   SEGMENTS IN THE MODULE
@@ -17702,7 +17671,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\gatt_uuid.r51
+  FILE NAME : F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\gatt_uuid.r51
   PROGRAM MODULE, NAME : gatt_uuid
 
   SEGMENTS IN THE MODULE
@@ -17867,7 +17836,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\hal_adc.r51
+  FILE NAME : F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\hal_adc.r51
   PROGRAM MODULE, NAME : hal_adc
 
   SEGMENTS IN THE MODULE
@@ -17976,7 +17945,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\hal_aes.r51
+  FILE NAME : F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\hal_aes.r51
   PROGRAM MODULE, NAME : hal_aes
 
   SEGMENTS IN THE MODULE
@@ -18068,7 +18037,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\hal_crc.r51
+  FILE NAME : F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\hal_crc.r51
   PROGRAM MODULE, NAME : hal_crc
 
   SEGMENTS IN THE MODULE
@@ -18089,7 +18058,7 @@ SFR_AN
 
     *************************************************************************
 
-  FILE NAME : E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\hal_dma.r51
+  FILE NAME : F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\hal_dma.r51
   PROGRAM MODULE, NAME : hal_dma
 
   SEGMENTS IN THE MODULE
@@ -18212,7 +18181,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\hal_drivers.r51
+  FILE NAME : F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\hal_drivers.r51
   PROGRAM MODULE, NAME : hal_drivers
 
   SEGMENTS IN THE MODULE
@@ -18314,7 +18283,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\hal_flash.r51
+  FILE NAME : F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\hal_flash.r51
   PROGRAM MODULE, NAME : hal_flash
 
   SEGMENTS IN THE MODULE
@@ -18386,7 +18355,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\hal_key.r51
+  FILE NAME : F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\hal_key.r51
   PROGRAM MODULE, NAME : hal_key
 
   SEGMENTS IN THE MODULE
@@ -18728,7 +18697,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\hal_lcd.r51
+  FILE NAME : F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\hal_lcd.r51
   PROGRAM MODULE, NAME : hal_lcd
 
   SEGMENTS IN THE MODULE
@@ -19081,7 +19050,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\hal_led.r51
+  FILE NAME : F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\hal_led.r51
   PROGRAM MODULE, NAME : hal_led
 
   SEGMENTS IN THE MODULE
@@ -19110,7 +19079,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\hal_sleep.r51
+  FILE NAME : F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\hal_sleep.r51
   PROGRAM MODULE, NAME : hal_sleep
 
   SEGMENTS IN THE MODULE
@@ -19169,7 +19138,7 @@ INTVEC
 
     *************************************************************************
 
-  FILE NAME : E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\hal_startup.r51
+  FILE NAME : F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\hal_startup.r51
   PROGRAM MODULE, NAME : hal_startup
 
   SEGMENTS IN THE MODULE
@@ -19183,10 +19152,10 @@ CSTART
 
     *************************************************************************
 
-  FILE NAME : E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\hal_timer.r51
+  FILE NAME : F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\hal_timer.r51
     *************************************************************************
 
-  FILE NAME : E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\hal_uart.r51
+  FILE NAME : F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\hal_uart.r51
   PROGRAM MODULE, NAME : hal_uart
 
   SEGMENTS IN THE MODULE
@@ -19415,10 +19384,10 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\npi.r51
+  FILE NAME : F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\npi.r51
     *************************************************************************
 
-  FILE NAME : E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\osal_bufmgr.r51
+  FILE NAME : F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\osal_bufmgr.r51
   PROGRAM MODULE, NAME : osal_bufmgr
 
   SEGMENTS IN THE MODULE
@@ -19542,7 +19511,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\osal_cbtimer.r51
+  FILE NAME : F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\osal_cbtimer.r51
   PROGRAM MODULE, NAME : osal_cbtimer
 
   SEGMENTS IN THE MODULE
@@ -19663,7 +19632,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\osal_snv.r51
+  FILE NAME : F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\osal_snv.r51
   PROGRAM MODULE, NAME : osal_snv
 
   SEGMENTS IN THE MODULE
@@ -20102,7 +20071,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\peripheral.r51
+  FILE NAME : F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\peripheral.r51
   PROGRAM MODULE, NAME : peripheral
 
   SEGMENTS IN THE MODULE
@@ -20851,7 +20820,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\sht10.r51
+  FILE NAME : F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\sht10.r51
   PROGRAM MODULE, NAME : sht10
 
   SEGMENTS IN THE MODULE
@@ -20997,7 +20966,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\simpleBLEPeripheral.r51
+  FILE NAME : F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\simpleBLEPeripheral.r51
   PROGRAM MODULE, NAME : simpleBLEPeripheral
 
   SEGMENTS IN THE MODULE
@@ -21307,7 +21276,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : E:\onedrie\文档\GitHub\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\simpleGATTprofile.r51
+  FILE NAME : F:\实习生\TI-CC2540-SHT10\Projects\ble\SimpleBLEPeripheral\CC2541DB\CC2541\Obj\simpleGATTprofile.r51
   PROGRAM MODULE, NAME : simpleGATTprofile
 
   SEGMENTS IN THE MODULE
@@ -21805,7 +21774,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : F:\BLE\IAR\8051\LIB\CLIB\cl-pli-blxd-1e16x01.r51
+  FILE NAME : E:\IAR\8051\LIB\CLIB\cl-pli-blxd-1e16x01.r51
   LIBRARY MODULE, NAME : ?cexit
 
   SEGMENTS IN THE MODULE
